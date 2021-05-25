@@ -1,7 +1,7 @@
 import express from 'express';
 import router from './routes/index.js'
 import db from './config/db.js'
-import bodyParser from 'body-parser'
+
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.set('view engine', 'pug');
 
 //agregar body parser
 app.use(express.urlencoded({extended:true}));
-app.use(bodyParser.json());
+
 
 //definir carpeta public
 app.use(express.static('public'));
