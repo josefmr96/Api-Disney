@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize';
 const db = new Sequelize('disney', 'root', '', {
-    host: '127.0.0.1',
-    port: '3306',
+    host: 'localhost',
+    port: 'port',
     dialect: 'mysql',
     define: {
         timestamps : false
